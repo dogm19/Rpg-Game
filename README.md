@@ -1,5 +1,5 @@
-@@ -1 +3, @@
+@@ -1 +1,3 @@
 
 +# Rpg-Game
-
-um projeto de uma RPG simples protótipo 01
++
++um projeto de uma RPG simples protótipo 01
