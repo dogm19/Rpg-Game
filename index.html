@@ -1,0 +1,144 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>life - game</title>
+  </head>
+  <body>
+    <main id="home">
+      <section id="cima">
+        <h1> LIFE </h1>
+      </section>
+      <section id="baixo">
+        <a id="comecar" onclick="telaSalvar()">START</a>
+        <a id="opcao">OPTIONS</a>
+        <a id="sair">EXIT</a>
+      </section>
+    </main>
+    <main id="save-slot">
+      <h1>Salvar</h1>
+      <section id="slots">
+
+        <div id="save-1" onclick="telaCriar()">
+          <div id="perfil"></div>
+          <a>vazio</a>
+        </div>
+
+        <div id="save-2" onclick="telaCriar()">
+          <div id="perfil"></div>
+          <p>vazio</p>
+        </div>
+
+        <div id="save-3" onclick="telaCriar()">
+          <div id="perfil"></div>
+          <p>vazio</p>
+        </div>
+        
+      </section>
+      <a id="exit" onclick="sair()">EXIT</a>
+    </main>
+    <main id="create">
+      <h1>Criação de personagem</h1>
+      <section id="personagem">
+        <div id="quadro0">
+          <div id="quadro-1">
+            <img src="" alt="">
+          </div>
+
+          <div id="atributos">
+            <div id="at01">
+
+              <div class="atributo">
+                <strong>For:</strong> <span id="forca">10</span>
+              </div>
+          
+              <div class="atributo">
+                <strong>Agi:</strong> <span id="agilidade">8</span>
+              </div>
+          
+              <div class="atributo">
+                <strong>Des:</strong> <span id="destreza">12</span>
+              </div>
+          
+              <div class="atributo">
+                <strong>Vit:</strong> <span id="vitalidade">15</span>
+              </div>
+
+            </div>
+        
+            <div id="at02">
+
+              <div class="atributo">
+                <strong>Sab:</strong> <span id="sabedoria">20</span>
+              </div>
+          
+              <div class="atributo">
+                <strong>Int:</strong> <span id="inteligencia">18</span>
+              </div>
+          
+              <div class="atributo">
+                <strong>Sor:</strong> <span id="sorte">5</span>
+              </div>
+  
+              <div class="atributo">
+                <strong>Car:</strong> <span id="carisma">13</span>
+              </div>
+
+            </div>
+
+          </div>
+        </div>
+        <div id="quadro-2">
+          <form id="nPerson">
+            <label for="nome">Nome:</label>
+            <input type="text" id="nome" name="nome">
+          </form>
+          
+          <div id="raca">
+            <a onclick="">Humano</a>
+            <a onclick="">Elfo</a>
+            <a onclick="">Anão</a>
+            <a onclick="">Orc</a>
+          </div>
+
+          <div id="alinhamento">
+            <a onclick="">Bom</a>
+            <a onclick="">Neutro</a>
+            <a onclick="">Mal</a>
+          </div>
+          <div id="classe">
+
+            <div id="class01">
+
+              <div>
+                <img src="" alt="" id="image01">
+                <a for="image01">Mago</a>
+              </div>
+
+              <div>
+                <img src="" alt="" id="image02">
+                <a for="image02">Guerreiro</a>
+              </div>
+
+            </div>
+
+            <div id="class02">
+
+              <img src="" alt="" id="image03">
+              <a for="image03">Arqueiro</a>
+
+              <img src="" alt="" id="image04">
+              <a for="image04">Curandeiro</a>
+              
+            </div>
+          </div>
+          <a id="voltar" onclick="telaVoltarSalvar()">Voltar</a>
+          <a id="salvar" onclick="salvar()">Salvar</a>
+        </div>
+      </section>
+    </main>
+  </body>
+  <script src="script.js"></script>
+</html>
